@@ -16,7 +16,7 @@ dashboard.section.header.val = {
 }
 dashboard.section.buttons.val = {
 	dashboard.button("spc f f", "  Find file", ":Telescope find_files <CR>"),
-	dashboard.button("spc p p ","  Find project", ":Telescope projects <CR>"),
+	dashboard.button("spc p p","  Find project", ":Telescope projects <CR>"),
 	dashboard.button("spc f r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("spc f t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("spc f p", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
