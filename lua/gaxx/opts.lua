@@ -5,6 +5,8 @@ local opts = {
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0,                        -- so that `` is visible in markdown files
   fileencoding = "utf-8",                  -- the encoding written to a file
+  foldmethod = "manual",                   -- folding, set to "expr" for treesitter based folding
+  foldexpr = "",                           -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
   hlsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "a",                             -- allow the mouse to be used in neovim
@@ -32,8 +34,10 @@ local opts = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "FiraCode NF:h15",          -- the font used in graphical neovim applications
-  spelllang = en_us,
+  guifont = "FiraCode NF:h13",          -- the font used in graphical neovim applications
+  spell = true,
+  spelllang = "en",
+  spellfile = "~/.config/nvim/spell/en.utf-8.add"
 }
 
 vim.opt.shortmess:append "c"
@@ -42,6 +46,7 @@ for k, v in pairs(opts) do
   vim.opt[k] = v
 end
 
+vim.cmd "behave mswin" -- <C-x><C-s> show popup menu to fix spell error
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
