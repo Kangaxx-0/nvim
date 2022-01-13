@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["auto-session"] = {
+    loaded = true,
+    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/auto-session",
+    url = "https://github.com/rmagatti/auto-session"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -128,11 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["git-blame.nvim"] = {
-    loaded = true,
-    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
-    url = "https://github.com/f-person/git-blame.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -174,11 +174,6 @@ _G.packer_plugins = {
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
-  neon = {
-    loaded = true,
-    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/neon",
-    url = "https://github.com/rafamadriz/neon"
-  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -198,11 +193,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lightbulb"] = {
-    loaded = true,
-    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
-    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -255,7 +245,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["pretty-fold.nvim"] = {
-    config = { "\27LJ\2\nv\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\21setup_keybinding\24pretty-fold.preview\nsetup\16pretty-fold\frequire\0" },
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/pretty-fold.nvim",
     url = "https://github.com/anuvyklack/pretty-fold.nvim"
@@ -291,7 +280,6 @@ _G.packer_plugins = {
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["trouble.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
@@ -319,14 +307,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: pretty-fold.nvim
-time([[Config for pretty-fold.nvim]], true)
-try_loadstring("\27LJ\2\nv\0\0\3\0\5\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\4\0B\0\1\1K\0\1\0\21setup_keybinding\24pretty-fold.preview\nsetup\16pretty-fold\frequire\0", "config", "pretty-fold.nvim")
-time([[Config for pretty-fold.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

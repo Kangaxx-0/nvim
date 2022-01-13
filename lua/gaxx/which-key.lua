@@ -22,7 +22,7 @@ wk.register({
     g = {
       name = "Git",
       g = { "<cmd>Neogit<cr>", "Neogit"},
-      B = { "<cmd>GitBlameToggle<cr>", "Blame"},
+      B = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame"},
     },
     l = {
       name = "Lsp",
@@ -63,6 +63,11 @@ wk.register({
     p = {
       name = "Project",
       p = { "<cmd>:Telescope projects<cr>", "Find project"},
+    },
+    S = {
+      name = "Quit/session",
+      s = { "<cmd>SaveSession<cr>", "Save session" },
+      r = { "<cmd>RestoreSession<cr>", "Restore last session" },
     },
     s = {
       name = "Search",

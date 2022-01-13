@@ -2,6 +2,7 @@
 -- Author: shadmansaleh
 -- Credit: glepnir
 local lualine = require('lualine')
+requires = { "kyazdani42/nvim-web-devicons", opt = true }
 
 -- Color table for highlights
 -- stylua: ignore
@@ -37,7 +38,7 @@ local conditions = {
 local config = {
   options = {
     -- Disable sections and component separators
-    component_separators = '',
+    component_separators = '|',
     section_separators = '',
     theme = {
       -- We are going to use lualine_c an lualine_x as left and
@@ -172,7 +173,7 @@ ins_left({
     return msg
   end,
   icon = ' LSP:',
-  color = { fg = '#ffffff', gui = 'bold' },
+  color = { fg = '#ffe4e1', gui = 'bold' },
 })
 
 -- Add components to right sections

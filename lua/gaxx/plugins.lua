@@ -41,75 +41,58 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- autopairs
-  -- Themes plugins
-  use 'folke/tokyonight.nvim'
-  use "rafamadriz/neon"
-  use "bluz71/vim-nightfly-guicolors"
+  use "wbthomason/packer.nvim"                                -- Have packer manage itself
+  use "nvim-lua/popup.nvim"                                   -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim"                                 -- Useful lua functions used ny lots of plugins
+  use "windwp/nvim-autopairs"                                 -- A minimalist autopairs
+  use 'folke/tokyonight.nvim'                                 -- Themes plugins
+  use "bluz71/vim-nightfly-guicolors"                             
   use "dracula/vim"
   use 'EdenEast/nightfox.nvim'
   use 'marko-cerovac/material.nvim'
-  use "folke/which-key.nvim" -- Which key
-  use "nvim-telescope/telescope.nvim" -- Telescope
+  use "folke/which-key.nvim"                                  -- Key binding
+  use "nvim-telescope/telescope.nvim"                         -- Telescope -> fuzzy finder
   use 'nvim-telescope/telescope-media-files.nvim'
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  use 'kyazdani42/nvim-tree.lua' -- NvimTree
+  use "L3MON4D3/LuaSnip"                                      -- Snippet engine
+  use "rafamadriz/friendly-snippets"                          -- A bunch of snippets to use
+  use 'kyazdani42/nvim-tree.lua'                              -- nvimTree, a file explorer
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
-  use 'goolord/alpha-nvim' -- Aplha
-  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
-  use "lewis6991/impatient.nvim" -- Spped up loading
-  use "lukas-reineke/indent-blankline.nvim" -- Indentation
-  use "lewis6991/spellsitter.nvim" -- Spell check
-  use "phaazon/hop.nvim" -- Easymotion with Lua!
-  use "akinsho/toggleterm.nvim" -- Toggle Terminal
-
-  -- Dev
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "p00f/nvim-ts-rainbow"
-  use "numToStr/Comment.nvim" -- Comment 
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' } -- Git
-  use "lewis6991/gitsigns.nvim"
-  use "f-person/git-blame.nvim"
-  use "jose-elias-alvarez/null-ls.nvim" -- Linkters
-  use "ahmedkhalf/project.nvim" -- project
-  use "ray-x/go.nvim" -- go neovim
-  use "kosayoda/nvim-lightbulb" -- VSCode lightbulb
-  use {
-    "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true }
-  } -- Statusline
-  use {
+  use 'goolord/alpha-nvim'                                    -- Dashboard
+  use "antoinemadec/FixCursorHold.nvim"                       -- This is needed to fix lsp doc highlight
+  use "lewis6991/impatient.nvim"                              -- Speed up loading
+  use "lukas-reineke/indent-blankline.nvim"                   -- Indentation
+  use "lewis6991/spellsitter.nvim"                            -- Spell check
+  use "phaazon/hop.nvim"                                      -- Easy motion with Lua!
+  use "akinsho/toggleterm.nvim"                               -- Toggle Terminal
+  use "rmagatti/auto-session"                                 -- Session Manager
+  use "kyazdani42/nvim-web-devicons"                          -- Icons for other plugins
+  use {                                                       -- Neovim Treesitter configurations and abstraction layer
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
-  } ---- TreeSitter
-  use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {
-      }
-    end
-  } ---- Trouble
-  use{ 'anuvyklack/pretty-fold.nvim',
-     config = function()
-        require('pretty-fold').setup{}
-        require('pretty-fold.preview').setup_keybinding()
-     end
-  } -- Folding
+  }
+
+  -- Dev
+  use "hrsh7th/nvim-cmp"                                      -- The completion plugin
+  use "hrsh7th/cmp-buffer"                                    -- Buffer completions
+  use "hrsh7th/cmp-path"                                      -- Path completions
+  use "hrsh7th/cmp-cmdline"                                   -- Cmdline completions
+  use "saadparwaiz1/cmp_luasnip"                              -- Snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+  use "neovim/nvim-lspconfig"                                 -- Quickstart configurations for the Neovim LSP client
+  use "williamboman/nvim-lsp-installer"                       -- Simple to use language server installer
+  use "p00f/nvim-ts-rainbow"                                  -- Rainbow 🌈 parentheses for Neovim using tree-sitter 🌈.
+  use "numToStr/Comment.nvim"                                 -- Smart and Powerful comment plugin for Neovim. Supports commentstring, motions, dot-repeat and more.
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "TimUntersberger/neogit"                                -- A clone of Magit
+  use "lewis6991/gitsigns.nvim"                               -- Git integration
+  use "jose-elias-alvarez/null-ls.nvim"                       -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
+  use "ahmedkhalf/project.nvim"                               -- An all in one Neovim plugin that provides superior project management
+  use "nvim-lualine/lualine.nvim"                             -- A blazing fast and easy to configure Neovim statusline
+  use "folke/trouble.nvim"                                    -- Diagnostic list
+  use "anuvyklack/pretty-fold.nvim"                           -- Folding preview
+  use "ray-x/go.nvim"                                         -- Golang plugin based on lsp and Treesitter
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
