@@ -54,6 +54,12 @@ wk.register({
         "Workspace Symbols",
       },
     },
+    o = {
+      name = "Open",
+      u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
+      m = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+      t = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+    },
     p = {
       name = "Project",
       p = { "<cmd>:Telescope projects<cr>", "Find project"},

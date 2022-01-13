@@ -52,17 +52,7 @@ return packer.startup(function(use)
   use "dracula/vim"
   use 'EdenEast/nightfox.nvim'
   use 'marko-cerovac/material.nvim'
-  -- Which keys
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
-  }
+  use "folke/which-key.nvim" -- Which key
   use "nvim-telescope/telescope.nvim" -- Telescope
   use 'nvim-telescope/telescope-media-files.nvim'
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -76,6 +66,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim" -- Indentation
   use "lewis6991/spellsitter.nvim" -- Spell check
   use "phaazon/hop.nvim" -- Easymotion with Lua!
+  use "akinsho/toggleterm.nvim" -- Toggle Terminal
 
   -- Dev
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -113,6 +104,12 @@ return packer.startup(function(use)
       }
     end
   } ---- Trouble
+  use{ 'anuvyklack/pretty-fold.nvim',
+     config = function()
+        require('pretty-fold').setup{}
+        require('pretty-fold.preview').setup_keybinding()
+     end
+  } -- Folding
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
