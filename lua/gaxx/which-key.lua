@@ -17,7 +17,6 @@ wk.register({
       n = { "<cmd>enew<cr>", "New File" },
       p = { "<cmd>e ~/.config/nvim/init.lua<cr>", "Find private config" },
       r = { "<cmd>Telescope oldfiles<cr>", "Recent files"},
-      t = { "<cmd>Telescope live_grep<cr>", "Find Text"},
     },
     g = {
       name = "Git",
@@ -68,6 +67,7 @@ wk.register({
       name = "Quit/session",
       s = { "<cmd>SaveSession<cr>", "Save session" },
       r = { "<cmd>RestoreSession<cr>", "Restore last session" },
+      p = { "<cmd>Telescope live_grep<cr>", "Find in project"},
     },
     s = {
       name = "Search",
