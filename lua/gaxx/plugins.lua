@@ -92,7 +92,8 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"                             -- A blazing fast and easy to configure Neovim statusline
   use "folke/trouble.nvim"                                    -- Diagnostic list
   use "anuvyklack/pretty-fold.nvim"                           -- Folding preview
-  use "ray-x/go.nvim"                                         -- Golang plugin based on lsp and Treesitter
+  use "fatih/vim-go"                                          -- Go language support
+  -- use "mfussenegger/nvim-dap"                              -- Debug Adapter Protocol for neovim
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

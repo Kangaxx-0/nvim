@@ -10,6 +10,11 @@ wk.register({
       r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename file" },
       x = { "<cmd>Trouble<cr>", "List all"},
     },
+    d = {
+      name = "Debug",
+      s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
+      t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
+    },
     f = {
       name = "File",
       f = { "<cmd>Telescope find_files<cr>", "Find files"},

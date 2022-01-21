@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["go.nvim"] = {
-    loaded = true,
-    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/go.nvim",
-    url = "https://github.com/ray-x/go.nvim"
-  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -293,6 +288,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-nightfly-guicolors"] = {
     loaded = true,
