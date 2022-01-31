@@ -47,7 +47,8 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"                                 -- A minimalist autopairs
   use 'folke/tokyonight.nvim'                                 -- Themes plugins
   use "bluz71/vim-nightfly-guicolors"                             
-  use "dracula/vim"
+  -- use "dracula/vim"
+  use "Mofiqul/dracula.nvim"
   use 'EdenEast/nightfox.nvim'
   use 'marko-cerovac/material.nvim'
   use "folke/which-key.nvim"                                  -- Key binding
