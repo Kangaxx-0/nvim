@@ -37,9 +37,7 @@ end
 dashboard.section.header.opts.hl = pick_color()
 dashboard.section.footer.val = footer()
 dashboard.section.footer.opts.hl = "Type"
--- dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
--- vim.cmd([[autocmd User AlphaReady echo 'ready']])
 alpha.setup(dashboard.opts)
