@@ -13,6 +13,7 @@ wk.register({
       name = "Debug",
       s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
       t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
+      v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
     },
     f = {
       name = "File",
