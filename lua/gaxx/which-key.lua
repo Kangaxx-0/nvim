@@ -11,6 +11,7 @@ wk.register({
     },
     d = {
       name = "Debug",
+      o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
       s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
       t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
       v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
