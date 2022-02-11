@@ -8,7 +8,7 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 local code_actions = null_ls.builtins.code_actions
-local completion = null_ls.builtins.completion
+-- local completion = null_ls.builtins.completion
 
 null_ls.setup {
   debug = false,
@@ -19,6 +19,5 @@ null_ls.setup {
     diagnostics.eslint,
     diagnostics.golangci_lint,
     code_actions.eslint,
-    completion.spell,
   },
 }
