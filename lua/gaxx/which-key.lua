@@ -11,11 +11,17 @@ wk.register({
     },
     d = {
       name = "Debug",
-      o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
+    -- Go debug settings
+      -- o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
       -- s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
       -- t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
-      s = {"<cmd> lua require'dap'.continue()<cr>",  "Start debug"},
-      v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
+      -- v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
+      a = {"<cmd> lua require'dap'.toggle_breakpoint()<cr>",  "Breakpoint"},
+      i = {"<cmd> lua require'dap'.step_into()<cr>",  "Step into"},
+      o = {"<cmd> lua require'dap'.step_out()<cr>",  "Step out"},
+      r = {"<cmd> lua require'dap'.repl.open()<cr>",  "Repl"},
+      s = {"<cmd> lua require'dap'.continue()<cr>",  "Start/Stop/Continue debug"},
+      t = {"<cmd> lua require'dapui'.toggle()<cr>",  "Toggle UI"},
     },
     f = {
       name = "File",
