@@ -11,11 +11,6 @@ wk.register({
     },
     d = {
       name = "Debug",
-    -- Go debug settings
-      -- o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
-      -- s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
-      -- t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
-      -- v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
       a = {"<cmd> lua require'dap'.toggle_breakpoint()<cr>",  "Breakpoint"},
       i = {"<cmd> lua require'dap'.step_into()<cr>",  "Step into"},
       o = {"<cmd> lua require'dap'.step_out()<cr>",  "Step out"},
@@ -32,9 +27,14 @@ wk.register({
       r = { "<cmd>Telescope oldfiles<cr>", "Recent files"},
     },
     g = {
-      name = "Git",
+      name = "Git/Go",
       g = { "<cmd>Neogit<cr>", "Neogit"},
       B = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame"},
+      -- Go debug settings
+      o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
+      s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
+      t = {"<cmd> GoDebugStop<cr>",  "Debug stop"},
+      v = {"<cmd> let g:go_debug_log_output=''<cr>",  "Turn off Verbose log"},
     },
     l = {
       name = "Lsp",
@@ -71,6 +71,12 @@ wk.register({
       u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
       m = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
       t = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+    },
+    r = {
+      name = "Rust",
+      b = { "<cmd>!cargo build<cr>", "Cargo Build" },
+      c = { "<cmd>!cargo check<cr>", "Cargo Check" },
+      t = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" },
     },
     p = {
       name = "Project",

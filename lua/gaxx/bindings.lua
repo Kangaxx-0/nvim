@@ -25,6 +25,13 @@ keymap("n", "F", "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hin
 keymap("n", "s", "<cmd>lua require'hop'.hint_char2({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false })<cr>", opts)
 keymap("n", "S", "<cmd>lua require'hop'.hint_char2({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = false })<cr>", opts)
 
+-- Debug --
+keymap("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>", opts)
+keymap("n", "<F10>","<cmd>lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<F11>","<cmd>lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<F12>","<cmd>lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<F9>", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
