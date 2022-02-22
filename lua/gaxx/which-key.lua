@@ -76,6 +76,7 @@ wk.register({
       name = "Rust",
       b = { "<cmd>!cargo build<cr>", "Cargo Build" },
       c = { "<cmd>!cargo check<cr>", "Cargo Check" },
+      r = { "<cmd>!cargo run<cr>", "Cargo Run" },
       t = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" },
     },
     p = {
