@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"                                 -- A minimalist autopairs
   use 'folke/tokyonight.nvim'                                 -- Themes plugins
   use "bluz71/vim-nightfly-guicolors"                             
-  -- use "dracula/vim"
+  use "rebelot/kanagawa.nvim"
   use "Mofiqul/dracula.nvim"
   use 'EdenEast/nightfox.nvim'
   use 'marko-cerovac/material.nvim'
@@ -81,6 +81,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip"                              -- Snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use "j-hui/fidget.nvim"                                     -- LSP progress
   use "neovim/nvim-lspconfig"                                 -- Quickstart configurations for the Neovim LSP client
   use "williamboman/nvim-lsp-installer"                       -- Simple to use language server installer
   use "p00f/nvim-ts-rainbow"                                  -- Rainbow 🌈 parentheses for Neovim using tree-sitter 🌈.
