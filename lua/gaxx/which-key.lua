@@ -74,10 +74,12 @@ wk.register({
     },
     r = {
       name = "Rust",
+      a = { "<cmd>RustRunnables<cr>", "Runnables" },
       b = { "<cmd>!cargo build<cr>", "Cargo Build" },
       c = { "<cmd>!cargo check<cr>", "Cargo Check" },
       r = { "<cmd>!cargo run<cr>", "Cargo Run" },
-      t = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" },
+      t = { "<cmd>!cargo test<cr>", "Cargo Test" },
+      T = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" },
     },
     p = {
       name = "Project",
