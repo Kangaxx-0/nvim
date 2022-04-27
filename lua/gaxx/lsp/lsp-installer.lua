@@ -9,6 +9,26 @@ lsp_installer.on_server_ready(function(server)
 	local opts = {
 		on_attach = require("gaxx.lsp.handlers").on_attach,
 		capabilities = require("gaxx.lsp.handlers").capabilities,
+		settings = {
+			["rust-analyzer"] = {
+				assist = {
+					importGranularity = "module",
+					importPrefix = "by_self",
+				},
+				cargo = {
+					loadOutDirsFromCheck = true,
+					autoreload = true,
+					allFeatures = true,
+				},
+				procMacro = {
+					enable = true,
+				},
+				checkOnSave = {
+					enable = true,
+					command = "clippy",
+				},
+			},
+		},
 	}
 
 	if server.name == "jsonls" then
