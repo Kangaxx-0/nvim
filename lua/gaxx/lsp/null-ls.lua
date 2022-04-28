@@ -15,9 +15,9 @@ null_ls.setup {
   sources = {
     formatting.prettier,
     formatting.stylua,
-    formatting.gofmt,
+    -- formatting.gofmt,
     diagnostics.eslint,
-    diagnostics.golangci_lint,
+    -- diagnostics.golangci_lint,
     code_actions.eslint,
   },
 }

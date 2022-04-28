@@ -117,10 +117,11 @@ wk.register({
   },
 })
 
--- Map leader to telescope find file
+-- Other key bindings
 wk.register({
   ["<leader><leader>"] = {"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", "Find" },
   ["<leader>q"] = {"<cmd>Bdelete<cr>", "Delete current buffer" },
   ["<M-1>"] = {"<cmd>NvimTreeToggle<cr>", "Open file explorer"},
+  ["<M-f>"] = {"<cmd>SymbolsOutline<cr>", "Toggle Symbols outlines"},
 })
 

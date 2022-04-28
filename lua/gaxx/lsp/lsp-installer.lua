@@ -9,6 +9,11 @@ lsp_installer.on_server_ready(function(server)
 	local opts = {
 		on_attach = require("gaxx.lsp.handlers").on_attach,
 		capabilities = require("gaxx.lsp.handlers").capabilities,
+	}
+
+	local rust_opts = {
+		on_attach = require("gaxx.lsp.handlers").on_attach,
+		capabilities = require("gaxx.lsp.handlers").capabilities,
 		settings = {
 			["rust-analyzer"] = {
 				assist = {
@@ -48,7 +53,7 @@ lsp_installer.on_server_ready(function(server)
 			-- settings rust-tools will provide to lspconfig during init.            --
 			-- We merge the necessary settings from nvim-lsp-installer (server:get_default_options())
 			-- with the user's own settings (opts).
-			server = vim.tbl_deep_extend("force", server:get_default_options(), opts),
+			server = vim.tbl_deep_extend("force", server:get_default_options(), rust_opts),
 		})
 		server:attach_buffers()
 	else
