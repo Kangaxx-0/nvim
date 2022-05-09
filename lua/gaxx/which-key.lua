@@ -123,5 +123,6 @@ wk.register({
   ["<leader>q"] = {"<cmd>Bdelete<cr>", "Delete current buffer" },
   ["<M-1>"] = {"<cmd>NvimTreeToggle<cr>", "Open file explorer"},
   ["<M-f>"] = {"<cmd>SymbolsOutline<cr>", "Toggle Symbols outlines"},
+  ["<g-i>"] = {"<cmd>lua vim.lsp.buf.implementation()<cr>", "Go to implementation"},
 })
 
