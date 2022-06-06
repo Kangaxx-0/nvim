@@ -89,7 +89,6 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"                                 -- Smart and Powerful comment plugin for Neovim. Supports commentstring, motions, dot-repeat and more.
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "TimUntersberger/neogit"                                -- A clone of Magit
-  use "lewis6991/gitsigns.nvim"                               -- Git integration
   use "jose-elias-alvarez/null-ls.nvim"                       -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
   use "ahmedkhalf/project.nvim"                               -- An all in one Neovim plugin that provides superior project management
   use "nvim-lualine/lualine.nvim"                             -- A blazing fast and easy to configure Neovim statusline
