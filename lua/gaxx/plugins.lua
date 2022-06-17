@@ -88,7 +88,6 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"                                  -- Rainbow 🌈 parentheses for Neovim using tree-sitter 🌈.
   use "numToStr/Comment.nvim"                                 -- Smart and Powerful comment plugin for Neovim. Supports commentstring, motions, dot-repeat and more.
   use "JoosepAlviste/nvim-ts-context-commentstring"
-  use "TimUntersberger/neogit"                                -- A clone of Magit
   use "jose-elias-alvarez/null-ls.nvim"                       -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua.
   use "ahmedkhalf/project.nvim"                               -- An all in one Neovim plugin that provides superior project management
   use "nvim-lualine/lualine.nvim"                             -- A blazing fast and easy to configure Neovim statusline
@@ -96,6 +95,7 @@ return packer.startup(function(use)
   use "anuvyklack/pretty-fold.nvim"                           -- Folding preview
   use "mfussenegger/nvim-dap"                                 -- Debug Adapter Protocol for neovim
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use "braxtons12/blame_line.nvim"                            -- Git blame current line
 
   -- Go
   use "fatih/vim-go"                                          -- Go language support

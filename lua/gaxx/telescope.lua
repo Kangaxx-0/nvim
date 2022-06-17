@@ -13,6 +13,9 @@ telescope.setup {
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
+    preview = {
+      treesitter = false,
+    },
 
     mappings = {
       i = {
@@ -80,6 +83,9 @@ telescope.setup {
     },
   },
   pickers = {
+    find_files = {
+      theme = "dropdown",
+    }
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
     --   picker_config_key = value,
