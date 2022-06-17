@@ -29,7 +29,7 @@ wk.register({
     g = {
       name = "Git/Go",
       g = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "LazyGit" },
-      B = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "Blame"},
+      b = { "<cmd>BlameLineToggle<cr>", "Blame"},
       -- Go debug settings
       -- o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
       -- s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
