@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/auto-session",
     url = "https://github.com/rmagatti/auto-session"
   },
+  ["blame_line.nvim"] = {
+    loaded = true,
+    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/blame_line.nvim",
+    url = "https://github.com/braxtons12/blame_line.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -173,11 +178,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
-  },
-  neogit = {
-    loaded = true,
-    path = "/home/gaxx/.local/share/nvim/site/pack/packer/start/neogit",
-    url = "https://github.com/TimUntersberger/neogit"
   },
   ["nightfox.nvim"] = {
     loaded = true,
