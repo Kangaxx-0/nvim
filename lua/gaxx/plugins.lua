@@ -96,6 +96,7 @@ return packer.startup(function(use)
   use "mfussenegger/nvim-dap"                                 -- Debug Adapter Protocol for neovim
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use "braxtons12/blame_line.nvim"                            -- Git blame current line
+  use "github/copilot.vim"                                    -- Git copilot
 
   -- Go
   use "fatih/vim-go"                                          -- Go language support
