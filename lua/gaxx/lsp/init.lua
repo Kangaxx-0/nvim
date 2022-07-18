@@ -7,5 +7,3 @@ end
 require("gaxx.lsp.lsp-installer")
 require("gaxx.lsp.handlers").setup()
 require("gaxx.lsp.null-ls")
-require("gaxx.lsp.go")
-require("gaxx.lsp.rust-tools")
