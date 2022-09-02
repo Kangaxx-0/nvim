@@ -82,6 +82,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
   use "j-hui/fidget.nvim" -- LSP progress
+  use "github/copilot.vim" -- Github copilot
   use "simrat39/symbols-outline.nvim" -- A tree like view for symbols in Neovim using the Language Server Protocol. Supports all your favourite languages.
   use "neovim/nvim-lspconfig" -- Quickstart configurations for the Neovim LSP client
   use "williamboman/nvim-lsp-installer" -- Simple to use language server installer

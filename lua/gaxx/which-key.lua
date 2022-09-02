@@ -7,29 +7,30 @@ wk.register({
       a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code actions" },
       f = { "<cmd>lua vim.lsp.buf.formatting_sync()<cr>", "Format file" },
       r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename file" },
-      x = { "<cmd>Trouble<cr>", "List all"},
+      c = { "<cmd>Copilot panel<cr>", "Copilot suggestion" },
+      x = { "<cmd>Trouble<cr>", "List all" },
     },
     d = {
       name = "Debug",
-      a = {"<cmd> lua require'dap'.toggle_breakpoint()<cr>",  "Breakpoint"},
-      i = {"<cmd> lua require'dap'.step_into()<cr>",  "Step into"},
-      o = {"<cmd> lua require'dap'.step_out()<cr>",  "Step out"},
-      r = {"<cmd> lua require'dap'.repl.open()<cr>",  "Repl"},
-      s = {"<cmd> lua require'dap'.continue()<cr>",  "Start/Stop/Continue debug"},
-      t = {"<cmd> lua require'dapui'.toggle()<cr>",  "Toggle UI"},
+      a = { "<cmd> lua require'dap'.toggle_breakpoint()<cr>", "Breakpoint" },
+      i = { "<cmd> lua require'dap'.step_into()<cr>", "Step into" },
+      o = { "<cmd> lua require'dap'.step_out()<cr>", "Step out" },
+      r = { "<cmd> lua require'dap'.repl.open()<cr>", "Repl" },
+      s = { "<cmd> lua require'dap'.continue()<cr>", "Start/Stop/Continue debug" },
+      t = { "<cmd> lua require'dapui'.toggle()<cr>", "Toggle UI" },
     },
     f = {
       name = "File",
-      f = { "<cmd>Telescope find_files<cr>", "Find files"},
-      e = { "<cmd>ene <BAR> startinsert<cr>", "New Text"},
+      f = { "<cmd>Telescope find_files<cr>", "Find files" },
+      e = { "<cmd>ene <BAR> startinsert<cr>", "New Text" },
       n = { "<cmd>enew<cr>", "New File" },
       p = { "<cmd>e ~/.config/nvim/init.lua<cr>", "Find private config" },
-      r = { "<cmd>Telescope oldfiles<cr>", "Recent files"},
+      r = { "<cmd>Telescope oldfiles<cr>", "Recent files" },
     },
     g = {
       name = "Git/Go",
       g = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "LazyGit" },
-      b = { "<cmd>BlameLineToggle<cr>", "Blame"},
+      b = { "<cmd>BlameLineToggle<cr>", "Blame" },
       -- Go debug settings
       -- o = {"<cmd> GoDebugStepOut<cr>", "Debug step out"},
       -- s = {"<cmd> GoDebugStart<cr>", "Debug start/continue"},
@@ -38,7 +39,7 @@ wk.register({
     },
     l = {
       name = "Lsp",
-      f = { "<cmd>NullLsInfo<cr>", "NullLsInfo"},
+      f = { "<cmd>NullLsInfo<cr>", "NullLsInfo" },
       d = {
         "<cmd>Telescope diagnostics bufnr=0<cr>",
         "Document Diagnostics",
@@ -83,7 +84,7 @@ wk.register({
     },
     p = {
       name = "Project",
-      p = { "<cmd>:Telescope projects<cr>", "Find project"},
+      p = { "<cmd>:Telescope projects<cr>", "Find project" },
     },
     S = {
       name = "Quit/session",
@@ -98,17 +99,17 @@ wk.register({
       k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
       M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
       R = { "<cmd>Telescope registers<cr>", "Registers" },
-      p = { "<cmd>Telescope live_grep<cr>", "Find in project"},
+      p = { "<cmd>Telescope live_grep<cr>", "Find in project" },
     },
     w = {
       name = "Window",
-      c = {"<cmd>quit<cr>", "kill split"},
-      v = {"<cmd>vsplit<cr>", "split vertically"},
-      s = {"<cmd>split<cr>", "split horizontally"},
-      h = {"<C-w>h", "Move left window"},
-      j = {"<C-w>j", "Move down window"},
-      k = {"<C-w>k", "Move up window"},
-      l = {"<C-w>l", "Move right window"},
+      c = { "<cmd>quit<cr>", "kill split" },
+      v = { "<cmd>vsplit<cr>", "split vertically" },
+      s = { "<cmd>split<cr>", "split horizontally" },
+      h = { "<C-w>h", "Move left window" },
+      j = { "<C-w>j", "Move down window" },
+      k = { "<C-w>k", "Move up window" },
+      l = { "<C-w>l", "Move right window" },
     },
     -- ["<leader>"] = {
     --   name = "spc",
@@ -119,10 +120,10 @@ wk.register({
 
 -- Other key bindings
 wk.register({
-  ["<leader><leader>"] = {"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", "Find" },
-  ["<leader>q"] = {"<cmd>Bdelete<cr>", "Delete current buffer" },
-  ["<M-1>"] = {"<cmd>NvimTreeToggle<cr>", "Open file explorer"},
-  ["<M-f>"] = {"<cmd>SymbolsOutline<cr>", "Toggle Symbols outlines"},
-  ["<g-i>"] = {"<cmd>lua vim.lsp.buf.implementation()<cr>", "Go to implementation"},
+  ["<leader><leader>"] = { "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+    "Find" },
+  ["<leader>q"] = { "<cmd>Bdelete<cr>", "Delete current buffer" },
+  ["<M-1>"] = { "<cmd>NvimTreeToggle<cr>", "Open file explorer" },
+  ["<M-f>"] = { "<cmd>SymbolsOutline<cr>", "Toggle Symbols outlines" },
+  ["<g-i>"] = { "<cmd>lua vim.lsp.buf.implementation()<cr>", "Go to implementation" },
 })
-
