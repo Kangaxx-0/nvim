@@ -13,7 +13,7 @@ bufferline.setup {
     -- NOTE: this plugin is designed with this icon in mind,
     -- and so changing this is NOT recommended, this is intended
     -- as an escape hatch for people who cannot bear it for whatever reason
-    indicator_icon = "▎",
+    indicator = { style = "icon,", icon = "▎" },
     buffer_close_icon = "",
     -- buffer_close_icon = '',
     modified_icon = "●",
@@ -25,7 +25,7 @@ bufferline.setup {
     --- Please note some names can/will break the
     --- bufferline so use this at your discretion knowing that it has
     --- some limitations that will *NOT* be fixed.
-    name_formatter = function(buf)  -- buf contains a "name", "path" and "bufnr"
+    name_formatter = function(buf) -- buf contains a "name", "path" and "bufnr"
       -- remove extension from markdown files for example
       if buf.name:match('%.md') then
         return vim.fn.fnamemodify(buf.name, ':t:r')
@@ -37,7 +37,7 @@ bufferline.setup {
     diagnostics = false, -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
-      return "("..count..")"
+      return "(" .. count .. ")"
     end,
     -- NOTE: this will be called a lot so don't do any heavy processing here
     -- custom_filter = function(buf_number)
