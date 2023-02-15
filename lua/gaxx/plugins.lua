@@ -72,6 +72,8 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	})
+	use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
 
 	-- Dev
 	use("hrsh7th/nvim-cmp") -- The completion plugin
