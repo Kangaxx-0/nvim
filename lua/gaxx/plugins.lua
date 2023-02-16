@@ -56,7 +56,7 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope-media-files.nvim")
 	use("L3MON4D3/LuaSnip") -- Snippet engine
 	use("rafamadriz/friendly-snippets") -- A bunch of snippets to use
-	use("kyazdani42/nvim-tree.lua") -- nvimTree, a file explorer
+	use({ "kyazdani42/nvim-tree.lua", tag = "nightly" }) -- nvimTree, a file explorer
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
 	use("goolord/alpha-nvim") -- Dashboard
@@ -73,7 +73,7 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 	use("williamboman/mason.nvim")
-  use("williamboman/mason-lspconfig.nvim")
+	use("williamboman/mason-lspconfig.nvim")
 
 	-- Dev
 	use("hrsh7th/nvim-cmp") -- The completion plugin
