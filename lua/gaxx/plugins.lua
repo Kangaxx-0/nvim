@@ -74,6 +74,7 @@ return packer.startup(function(use)
 	})
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
+  use("xiyaowong/transparent.nvim") -- Opacity or transparent mode
 
 	-- Dev
 	use("hrsh7th/nvim-cmp") -- The completion plugin
