@@ -10,15 +10,15 @@ wk.register({
       c = { "<cmd>Copilot panel<cr>", "Copilot suggestion" },
       x = { "<cmd>Trouble<cr>", "List all" },
     },
-    d = {
-      name = "Debug",
-      a = { "<cmd> lua require'dap'.toggle_breakpoint()<cr>", "Breakpoint" },
-      i = { "<cmd> lua require'dap'.step_into()<cr>", "Step into" },
-      o = { "<cmd> lua require'dap'.step_out()<cr>", "Step out" },
-      r = { "<cmd> lua require'dap'.repl.open()<cr>", "Repl" },
-      s = { "<cmd> lua require'dap'.continue()<cr>", "Start/Stop/Continue debug" },
-      t = { "<cmd> lua require'dapui'.toggle()<cr>", "Toggle UI" },
-    },
+    --[[ d = { ]]
+    --[[   name = "Debug", ]]
+    --[[   a = { "<cmd> lua require'dap'.toggle_breakpoint()<cr>", "Breakpoint" }, ]]
+    --[[   i = { "<cmd> lua require'dap'.step_into()<cr>", "Step into" }, ]]
+    --[[   o = { "<cmd> lua require'dap'.step_out()<cr>", "Step out" }, ]]
+    --[[   r = { "<cmd> lua require'dap'.repl.open()<cr>", "Repl" }, ]]
+    --[[   s = { "<cmd> lua require'dap'.continue()<cr>", "Start/Stop/Continue debug" }, ]]
+    --[[   t = { "<cmd> lua require'dapui'.toggle()<cr>", "Toggle UI" }, ]]
+    --[[ }, ]]
     f = {
       name = "File",
       f = { "<cmd>Telescope find_files<cr>", "Find files" },
@@ -67,21 +67,21 @@ wk.register({
         "Workspace Symbols",
       },
     },
-    o = {
-      name = "Open",
-      u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-      m = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
-      t = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
-    },
-    r = {
-      name = "Rust",
-      a = { "<cmd>RustRunnables<cr>", "Runnables" },
-      b = { "<cmd>!cargo build<cr>", "Cargo Build" },
-      c = { "<cmd>!cargo check<cr>", "Cargo Check" },
-      r = { "<cmd>!cargo run<cr>", "Cargo Run" },
-      t = { "<cmd>!cargo test<cr>", "Cargo Test" },
-      T = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" },
-    },
+    --[[ o = { ]]
+    --[[   name = "Open", ]]
+    --[[   u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" }, ]]
+    --[[   m = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" }, ]]
+    --[[   t = { "<cmd>ToggleTerm direction=float<cr>", "Float" }, ]]
+    --[[ }, ]]
+    --[[ r = { ]]
+    --[[   name = "Rust", ]]
+    --[[   a = { "<cmd>RustRunnables<cr>", "Runnables" }, ]]
+    --[[   b = { "<cmd>!cargo build<cr>", "Cargo Build" }, ]]
+    --[[   c = { "<cmd>!cargo check<cr>", "Cargo Check" }, ]]
+    --[[   r = { "<cmd>!cargo run<cr>", "Cargo Run" }, ]]
+    --[[   t = { "<cmd>!cargo test<cr>", "Cargo Test" }, ]]
+    --[[   T = { "<cmd>RustOpenCargo<cr>", "Cargo TOML" }, ]]
+    --[[ }, ]]
     p = {
       name = "Project",
       p = { "<cmd>:Telescope projects<cr>", "Find project" },
