@@ -1,4 +1,5 @@
 require "gaxx.opts"
+require "gaxx.clipboard"
 require "gaxx.bindings"
 require "gaxx.plugins"
 require "gaxx.colorschemes"
