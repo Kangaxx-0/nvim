@@ -99,6 +99,7 @@ return packer.startup(function(use)
 	use("anuvyklack/pretty-fold.nvim") -- Folding preview
 	use("mfussenegger/nvim-dap") -- Debug Adapter Protocol for neovim
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use("f-person/git-blame.nvim") -- Git blame
 
 	-- Go
 	use("fatih/vim-go") -- Go language support
